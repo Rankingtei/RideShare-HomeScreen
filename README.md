@@ -2,7 +2,7 @@
 Implementation of a design of a Ride Share app in Figma using Swift(UIKit)
 
 # Installation
-Install Xcode on MacOS and import UIkit
+Install Xcode on MacOS
 
 # Visuals
 Screenshots of Figma design and Implementation running in Xcode simulator
