@@ -9,17 +9,20 @@ import UIKit
 
 class HomeVC: UIViewController {
     
-    lazy var  headerView = UIView()
-    lazy var datesView = UIView()
-    lazy var numberOfPersons = UIView()
-    lazy var tripExtras = UIView()
-    lazy var findInfo = UIView()
+    let  headerView = UIView()
+    let datesView = UIView()
+    let numberOfPersons = UIView()
+    let tripExtras = UIView()
+    let findInfo = UIView()
+    
+    lazy var headerViewVC = HeaderViewVC()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         
-        self.add(childVC: HeaderViewVC(), to: self.headerView)
+        self.add(childVC: headerViewVC, to: self.headerView)
         self.add(childVC: AvailableDatesVC(), to: self.datesView)
         self.add(childVC: NumberOfPersonsVC(), to: self.numberOfPersons)
         self.add(childVC: TripAddOnsVC(), to: self.tripExtras)

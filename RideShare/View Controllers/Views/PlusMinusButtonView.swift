@@ -46,20 +46,16 @@ class PlusMinusButtonView: UIView {
             minusIcon.leadingAnchor.constraint(equalTo: self.leadingAnchor),
             minusIcon.trailingAnchor.constraint(equalTo: seperator.leadingAnchor),
             minusIcon.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-//            minusIcon.heightAnchor.constraint(equalToConstant: 20),
-//            minusIcon.widthAnchor.constraint(equalToConstant: 20),
-//
+
             seperator.topAnchor.constraint(equalTo: self.topAnchor, constant: 7),
             seperator.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             seperator.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -7),
             seperator.widthAnchor.constraint(equalToConstant: 1),
             
-            
             plusIcon.leadingAnchor.constraint(equalTo: seperator.trailingAnchor, constant: 6),
             plusIcon.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -6),
             plusIcon.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-//            plusIcon.heightAnchor.constraint(equalToConstant: 14),
-//            plusIcon.widthAnchor.constraint(equalToConstant: 14)
+
             
             
         ])

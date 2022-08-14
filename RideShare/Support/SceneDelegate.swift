@@ -18,9 +18,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene  = (scene as? UIWindowScene) else { return }
                 window = UIWindow(frame: windowScene.coordinateSpace.bounds)
                 window?.windowScene = windowScene
-                window?.rootViewController = TabBarVC()
+                window?.rootViewController = HomeVC()
                 window?.makeKeyAndVisible()
     }
+    
+    func createStartUpNavigationController() -> UINavigationController {
+        let startupVC = StartUpScreenVC()
+        return UINavigationController(rootViewController: startupVC)
+    }
+    
+    func createHomeNavigationController() -> UINavigationController {
+        let homeVC = HomeVC()
+        return UINavigationController(rootViewController: homeVC)
+    }
+
+    
+    
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.

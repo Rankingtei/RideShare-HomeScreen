@@ -19,6 +19,11 @@ class StartUpScreenVC: UIViewController {
         configureStartScreen()
     }
     
+    @objc func checkAction(sender : UITapGestureRecognizer) {
+        let tabbarVC = TabBarVC()
+        navigationController?.pushViewController(tabbarVC, animated: true)
+    }
+    
     func configureStartScreen(){
         view.addSubview(sloganLabel)
         view.addSubview(startIcon)
@@ -27,6 +32,9 @@ class StartUpScreenVC: UIViewController {
         sloganLabel.font = .systemFont(ofSize: 25, weight: .bold)
         sloganLabel.textColor = .white
         sloganLabel.alpha = 0.5
+        
+        let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.checkAction))
+        self.sloganLabel.addGestureRecognizer(gesture)
        
         startIcon.image = UIImage(named: "image 11")
         startIcon.alpha = 0.5
