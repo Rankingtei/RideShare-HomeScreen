@@ -9,20 +9,11 @@ import UIKit
 
 class ExtrasView: UIView {
 
-    var extrasImage: UIImageView = {
-        let image = UIImageView()
-        return image
-    }()
+    let extrasImage = UIImageView()
+    let extrasLabel = UILabel()
+    var extrasPrice = UILabel()
     
-    var extrasLabel: UILabel = {
-        let label = UILabel()
-        return label
-    }()
     
-    var extrasPrice: UILabel = {
-        let image = UILabel()
-        return image
-    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
